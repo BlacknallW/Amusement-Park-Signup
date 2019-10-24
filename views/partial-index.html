@@ -1,0 +1,9 @@
+<section class="section">
+    <ul class="level">
+        ${parkData.map(park => `
+            <li style="width: 100%">
+                <a href="./${park.id}">${park.name}</a>
+            </li>
+        `).join('')}
+    </ul>
+</section>
